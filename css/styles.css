@@ -695,15 +695,48 @@ div.about-footer {
 
 }
 
-li.icon-list.footer a {
-	background-color:rgba(255, 255, 255, 0.1); ;
-	
+.social-footer {
+	display: flex;
+	gap:16px;
+	justify-content: center;
+
 }
 
 
-li.icon-list.footer a:hover,
-li.icon-list.footer a:focus,
-li.icon-list.footer a:active {
-	background-color: var(--success);
-	
+.icon-list-footer svg {
+	width: 24px;
+	height: 24px;
+	fill: var(--light);
 }
+
+.icon-list-footer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
+
+
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.1);;
+}
+
+
+svg.social-item-facebook {
+	padding: 0 6px 0 6px;
+}
+
+svg.social-item-twitter {
+	padding: 2px 0 2px 0;
+}
+
+.icon-list-footer a:hover,
+.icon-list-footer a:focus,
+.icon-list-footer a:active {
+	
+	background: var(--success);
+
+}
+
+
